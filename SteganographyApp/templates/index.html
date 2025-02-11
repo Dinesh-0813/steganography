@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steganography App with Cloud Computing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-roboto">
+    <header class="bg-blue-600 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Steganography App</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a class="hover:underline" href="#home">Home</a></li>
+            <li><a class="hover:underline" href="#features">Features</a></li>
+            <li><a class="hover:underline" href="#upload">Upload</a></li>
+            <li><a class="hover:underline" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+      <section id="home" class="text-center my-8">
+        <h2 class="text-3xl font-bold mb-4">Welcome to the Steganography App</h2>
+        <p class="text-gray-700 mb-6">
+          Easily convert speech to text with our advanced stenography tools powered by cloud computing technologies.
+        </p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          Get Started
+        </button>
+      </section>
+
+      <section id="features" class="my-8">
+        <h3 class="text-2xl font-bold mb-4">Features</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white p-4 rounded shadow">
+            <h4 class="text-xl font-bold mb-2">Real-Time Transcription</h4>
+            <p class="text-gray-700">
+              Convert speech to text in real-time with high accuracy.
+            </p>
+            <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+              Try Transcription
+            </button>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h4 class="text-xl font-bold mb-2">Multi-Language Support</h4>
+            <p class="text-gray-700">
+              Supports multiple languages for transcription.
+            </p>
+            <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+              Explore Languages
+            </button>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h4 class="text-xl font-bold mb-2">Secure Data Storage</h4>
+            <p class="text-gray-700">
+              Your data is securely stored and encrypted.
+            </p>
+            <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+              Learn More
+            </button>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h4 class="text-xl font-bold mb-2">Cloud-Based Processing</h4>
+            <p class="text-gray-700">
+              Leverage the power of cloud computing for fast and efficient transcription.
+            </p>
+            <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+              Cloud Features
+            </button>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h4 class="text-xl font-bold mb-2">Collaborative Editing</h4>
+            <p class="text-gray-700">
+              Edit transcriptions collaboratively in real-time.
+            </p>
+            <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+              Collaborate
+            </button>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h4 class="text-xl font-bold mb-2">Automatic Punctuation</h4>
+            <p class="text-gray-700">
+              Automatically punctuate transcriptions for better readability.
+            </p>
+            <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+              Enable Punctuation
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="upload" class="my-8">
+        <h3 class="text-2xl font-bold mb-4">Upload File for Steganography</h3>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <label for="file" class="block text-gray-700 mb-2">Choose File:</label>
+          <input type="file" name="file" required class="mb-4 block w-full" />
+          <label for="key" class="block text-gray-700 mb-2">Encryption Key:</label>
+          <input type="text" name="key" required class="mb-4 block w-full" />
+          <label for="message" class="block text-gray-700 mb-2">Message to Hide:</label>
+          <textarea name="message" required class="mb-4 block w-full"></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            Upload and Hide Message
+          </button>
+        </form>
+      </section>
+
+      <section id="contact" class="my-8">
+        <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+        <p class="text-gray-700">For inquiries, please contact us at <a href="mailto:support@steganographyapp.com" class="text-blue-600 hover:underline">support@steganographyapp.com</a>.</p>
+      </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-4">
+      <div class="container mx-auto text-center">
+        <p>© 2023 Steganography App. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
